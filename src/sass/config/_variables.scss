@@ -1,0 +1,102 @@
+:root {
+  --bg-first-color: rgb(35, 35, 36);
+  --bg-second-color: rgb(32, 75, 216);
+  --bg-tertiary-color: rgb(183, 185, 194);
+
+  --bg-yellow: rgb(233 196 69);
+  --bg-green: rgb(85 170 90);
+  --bg-red: rgb(222 15 15);
+  --bg-blue: rgb(68 104 201);
+  --bg-skyblue: rgb(21, 188, 197);
+  --bg-md-skyblue: rgb(105, 234, 203);
+  --bg-purple: rgb(118 66 201);
+  --bg-md-purple: rgb(234, 204, 248);
+  --bg-grey: rgb(148 150 159);
+
+  --txt-first-color: rgb(119, 118, 124);
+  --txt-second-color: rgb(32, 144, 216);
+  --txt-tertiary-color: rgb(255, 255, 255);
+  --txt-quaternary-color: rgb(43, 45, 70);
+
+  --bg-gradient-1: linear-gradient(
+    -225deg,
+    var(--bg-md-skyblue) 0%,
+    var(--bg-md-purple) 48%,
+    var(--bg-purple) 100%
+  );
+  --bg-gradient-2: linear-gradient(
+    270deg,
+    var(--bg-yellow) 24%,
+    var(--bg-skyblue) 24%,
+    var(--bg-skyblue) 50%,
+    var(--bg-green) 50%,
+    var(--bg-green) 76%,
+    var(--bg-red) 76%
+  );
+
+  --global-family-font: 'Roboto', 'Segoe UI Emoji', sans-serif;
+  --global-font-size: 12px;
+  --xl-font-size: 4em;
+  --h1-font-size: 3em;
+  --h2-font-size: 2em;
+  --h3-font-size: 1.8em;
+  --h4-font-size: 1.6em;
+  --p-font-size: 1.4em;
+  --span-font-size: 1.2em;
+  --small-font-size: 1em;
+  --smaller-font-size: 0.8em;
+
+  --font-thin: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-black: 900;
+}
+
+$min-small-screen: 450px;
+$small-screen: 576px; // (smartphones)
+$medium-screen: 820px; // (tablets en modo retrato)
+$large-screen: 992px; // (tablets en modo apaisado o laptops)
+$extra-large-screen: 1200px; // (computadoras de escritorio)
+
+$bg-1: var(--bg-first-color);
+$bg-2: var(--bg-second-color);
+$bg-3: var(--bg-tertiary-color);
+$bg-yel: var(--bg-yellow);
+$bg-green: var(--bg-green);
+$bg-red: var(--bg-red);
+$bg-blue: var(--bg-blue);
+$bg-skyblue: var(--bg-skyblue);
+$bg-md-skyblue: var(--bg-md-skyblue);
+$bg-purple: var(--bg-purple);
+$bg-md-purple: var(--bg-md-purple);
+$bg-grey: var(--bg-grey);
+$bg-g1: var(--bg-gradient-1);
+$bg-g2: var(--bg-gradient-2);
+$cl-1: var(--txt-first-color);
+$cl-2: var(--txt-second-color);
+$cl-3: var(--txt-tertiary-color);
+$cl-4: var(--txt-quaternary-color);
+
+$fm-main: var(--global-family-font);
+$fs-main: var(--global-font-size);
+
+$fs-xl: var(--xl-font-size);
+$fs-h1: var(--h1-font-size);
+$fs-h2: var(--h2-font-size);
+$fs-h3: var(--h3-font-size);
+$fs-h4: var(--h4-font-size);
+$fs-p: var(--p-font-size);
+$fs-span: var(--span-font-size);
+$fs-small: var(--small-font-size);
+$fs-smaller: var(--smaller-font-size);
+
+$fw-1: var(--font-thin);
+$fw-2: var(--font-light);
+$fw-3: var(--font-regular);
+$fw-4: var(--font-medium);
+$fw-5: var(--font-bold);
+$fw-6: var(--font-black);
+
+$shadow-1: 4px 6px 20px 5px rgb(36 36 36 / 22%);

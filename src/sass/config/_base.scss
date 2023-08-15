@@ -1,0 +1,122 @@
+@use '../config/variables' as *;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.1s ease-in-out;
+  background-color: $bg-1;
+  font-family: $fm-main;
+  font-size: $fs-main;
+  overflow: auto;
+}
+
+$listOfFontsSize: (
+  'h1': $fs-h1,
+  'h2': $fs-h2,
+  'h3': $fs-h3,
+  'h4': $fs-h4,
+  'p': $fs-p,
+  'span': $fs-span,
+  'small': $fs-small,
+  'smaller': $fs-smaller
+);
+
+@each $tag, $value in $listOfFontsSize {
+  #{$tag} {
+    font-size: $value;
+  }
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: $fw-4;
+}
+
+p,
+a,
+span,
+small {
+  font-weight: $fw-3;
+}
+
+h1 {
+  font-weight: $fw-5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-size: $fs-p;
+  text-decoration: none;
+}
+
+img,
+svg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.svg {
+  &__color {
+    fill: $bg-1;
+  }
+  &__blob {
+    fill: $bg-3;
+  }
+}
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  &.disable {
+    cursor: default !important;
+  }
+  $typesBtn: (
+    'success' $bg-green $cl-2,
+    'error' $bg-red $cl-2,
+    'warning' $bg-yel $cl-1,
+    'info' $bg-blue $cl-3,
+    'secure' $bg-grey $cl-2,
+    'normal' $bg-purple $cl-2
+  );
+  &.btn {
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin: 5px;
+    @each $tag, $bg, $cl in $typesBtn {
+      &.btn-#{$tag} {
+        color: $cl;
+        font-size: $fs-p;
+        background-color: $bg;
+      }
+    }
+  }
+}
+input,
+button {
+  font-size: $fs-p;
+  background: none;
+  border: none;
+}
